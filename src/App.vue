@@ -26,18 +26,19 @@ import { RouterLink, RouterView } from 'vue-router'
   </main>
 
   <footer>
-    tu są moje dane kontaktowe
+    <strong>Wojciech Przybyła</strong>
+    <a href="tel:+48530268000">+48 530 268 000</a>
+    <a href="mailto:kontakt@muzykaszytanamiare.pl">kontakt@muzykaszytanamiare.pl</a>
+    <a href="https://www.facebook.com/muzykaszytanamiarepl">muzykaszytanamiarepl</a>
   </footer>
 </template>
 
 <style scoped>
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  & > div > * {
-    margin: 0;
-  }
+header *, footer * {
+  margin: 0;
+}
+footer > * {
+  display: block;
+  text-align: center;
 }
 </style>
