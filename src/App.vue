@@ -3,25 +3,32 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header class="flex-right align-center">
-    <img alt="Logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div>
-      <h1>Muzyka Szyta Na Miarę</h1>
-      <h2 class="accent">Wojciech Przybyła</h2>
-      <h3>Organista</h3>
+  <header>
+    <div class="flex-right justify-center align-center">
+      <img alt="Logo" src="./assets/logo.svg" width="125" height="125" />
+  
+      <div>
+        <h1>Muzyka Szyta Na Miarę</h1>
+        <h2>Wojciech Przybyła</h2>
+        <h3>Organista</h3>
+      </div>
     </div>
+
+    <nav class="flex-right justify-center align-center">
+      <RouterLink v-for="route in $router.options.routes" :key="route.path"
+        :to="route.path"
+      >
+        {{ route.meta.title }}
+      </RouterLink>
+    </nav>
   </header>
 
-  <nav class="flex-right justify-center align-items">
-    <RouterLink v-for="route in $router.options.routes" :key="route.path"
-      :to="route.path"
-    >
-      {{ route.meta.title }}
-    </RouterLink>
-  </nav>
 
   <main>
+    <h2>
+      {{ $router.currentRoute.value.meta.title }}
+    </h2>
+
     <RouterView />
   </main>
 
@@ -40,5 +47,10 @@ header *, footer * {
 footer > * {
   display: block;
   text-align: center;
+}
+main {
+  text-align: center;
+  min-height: 50vh;
+  border-block: 1px solid lightgray;
 }
 </style>
