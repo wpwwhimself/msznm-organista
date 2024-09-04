@@ -19,7 +19,7 @@ import PipedSlot from './components/PipedSlot.vue'
         <RouterLink v-for="route in $router.options.routes" :key="route.path"
           :to="route.path"
         >
-          {{ route.meta.title }}
+          {{ route.meta!.title }}
         </RouterLink>
       </nav>
     </header>
