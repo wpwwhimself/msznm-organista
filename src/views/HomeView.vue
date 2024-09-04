@@ -3,7 +3,6 @@ import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  Jestem organistą!
+  Gram tyle już czasu i całkiem ładnie mi to wychodzi.
 </template>
