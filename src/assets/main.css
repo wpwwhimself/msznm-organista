@@ -24,7 +24,7 @@
 }
 
 :root {
-  --accent: hsl(120, 67%, 60%);
+  --accent: hsl(76, 72%, 48%);
   --accent2: hsl(56, 100%, 72%);
 }
 
@@ -60,6 +60,10 @@ body {
   &.justify-center {
     justify-content: center;
   }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
 }
 
 /*************** fonts *****************/
@@ -75,4 +79,9 @@ a, h2,
 .accent {
   text-decoration: none;
   color: var(--accent);
+}
+
+strong,
+.accent2 {
+  color: var(--accent2);
 }
