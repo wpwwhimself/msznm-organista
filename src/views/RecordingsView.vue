@@ -6,13 +6,13 @@ const showcases = [
     title: "Shorty",
     content: "Krótkie nagrania, jakie udaje mi się uchwycić podczas gry.",
     link: "https://www.youtube.com/playlist?list=PLpS8kGlqkYvS3nI6F_S2ZMchY3oS8VgjU",
-    img: undefined,
+    img: "https://i.ytimg.com/vi/S2bqofSOgP4/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLAKaizBWaT2G0M8U7Pe3thDmB47IA",
   },
   {
     title: "Gig Vlogi",
     content: "Dłuższe relacje z grań z moimi komentarzami.",
     link: "https://www.youtube.com/playlist?list=PLpS8kGlqkYvQAj957C4JmjMwXmFSa9Z4_",
-    img: undefined,
+    img: "https://i.ytimg.com/vi/EJcknn2ZDwo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeREz1780cC-E25BxDMplS03o5IQ",
   },
 ]
 </script>

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ImageContainer from './ImageContainer.vue';
+
 const props = defineProps<{
   title: string,
   img?: string,
@@ -6,12 +8,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="container flex-right align-center">
-    <img v-if="props.img" :src="props.img" :alt="props.title" />
-
+  <div class="container">
     <div class="contents">
+      <ImageContainer :src="props.img" />
       <h3>{{ props.title }}</h3>
-
       <slot />
     </div>
   </div>
@@ -20,8 +20,16 @@ const props = defineProps<{
 <style scoped>
 .container {
   width: 300px;
+  box-sizing: border-box;
+  border-block: 1px solid transparent;
+  
+  &:hover {
+    border-color: var(--fg);
+  }
 }
+
 .contents {
   text-align: left;
+  margin-block: 1em;
 }
 </style>

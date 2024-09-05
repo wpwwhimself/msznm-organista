@@ -23,11 +23,11 @@ const router = createRouter({
       }
     },
     {
-      path: '/videos',
-      name: 'videos',
+      path: '/recordings',
+      name: 'recordings',
       component: () => import('../views/RecordingsView.vue'),
       meta: {
-        title: "Filmy",
+        title: "Nagrania",
         icon: "??",
       }
     },
