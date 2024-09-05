@@ -34,4 +34,8 @@ const router = createRouter({
   ]
 })
 
+router.beforeEach((to) => {
+  document.title = `${to.meta!.title} | Organista Wojciech Przybyła`
+})
+
 export default router

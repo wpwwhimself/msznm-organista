@@ -19,7 +19,7 @@ const props = defineProps<{
 
 <style scoped>
 .container {
-  width: 500px;
+  width: 300px;
 }
 .contents {
   text-align: left;

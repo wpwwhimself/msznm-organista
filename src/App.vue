@@ -10,8 +10,8 @@ import PipedSlot from './components/PipedSlot.vue'
         <img alt="Logo" src="./assets/sz3_olive.svg" width="125" height="125" />
     
         <div>
-          <h1>Wojciech Przybyła</h1>
-          <h2>Organista</h2>
+          <h1>Muzyka Szyta Na Miarę</h1>
+          <h2>Wojciech Przybyła • Organista</h2>
         </div>
       </div>
   
@@ -52,5 +52,6 @@ main {
   text-align: center;
   min-height: 50vh;
   border-block: 1px solid lightgray;
+  overflow-y: auto;
 }
 </style>
